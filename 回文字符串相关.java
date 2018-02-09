@@ -30,4 +30,14 @@ public void panduan1(){
         System.out.println("此字符串不是一个回文字符串");  
     }  
 }
+
+public static boolean isHuiWen(String text) {
+          int length = text.length();
+          for (int i = 0; i < length / 2; i++) {
+              if (text.toCharArray()[i] != text.toCharArray()[length - i - 1]) {
+                  return false;
+              }
+          }
+          return true;
+     }
 //2.找出一个字符串中最长的回文字符串
